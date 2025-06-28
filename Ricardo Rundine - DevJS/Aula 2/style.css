@@ -1,0 +1,214 @@
+body {
+    /*Definindo o tipo de fonte da página web*/
+    font-family: 'Times New Roman', Times, serif;
+    /*Definindo a cor de fundo da página web*/
+    background-color: #81b6e9;
+    margin: 0%;
+}
+
+section {
+    background-color: #bbcfec;
+    /*Distância entre a borda section e demais elementos externos*/
+    margin-left: 20px;
+    /*Distância entre conteúdo da section e a borda da mesma section*/
+    padding: 20px;
+    /*Arredondamento das bordas da section*/
+    border-radius: 8px;
+}
+
+h2 {
+    color: black;
+}
+
+img {
+    
+    /*Definindo a largura máxima da imagem*/
+    max-width: 100%;
+    /*Definindo a altura da imagem*/
+    height: auto;
+    /*Arredondamento das bordas da imagem*/
+    border-radius: 8px;
+    /*Aplicando margin ou padding em diferentes direções
+    margin-top - cima
+    margin-right - direita
+    margin-bottom - baixo
+    margin-left - esquerda
+    */
+    margin-bottom: 10px;
+    /*Largura da imagem*/
+    width: 800px;
+}
+
+#dicas {
+
+    /* Definindo a cor de fundo da section dicas */
+    background-color: #3bc7dfda;
+}
+
+p {
+    /*Modificação espaçamento entre as linhas TAG p*/
+    line-height: 1.6;
+}
+
+/*Estilização do menu*/
+.menu {
+    display: inline-block;
+    /*Exibe os itens do menu em linha, permitindo que fiquem lado a lado*/
+
+}
+
+#barraNavegação {
+    margin-top: 0%;
+    /*Retira a distância entre a barra de navegação e o topo da página*/
+    /*Tornar fixa nossa barra de navegação*/
+    position: sticky;
+    /*Fixar a barra no topo da janela*/
+    top: 0px;
+    /*Definindo a cor de fundo da barra de navegação*/
+    background-color: #e9a1a1;
+    width: 100%;
+    height: 60px;
+
+
+}
+
+.menu a {
+
+    margin-top: 5px;
+    color: antiquewhite;
+    padding: 10px 10px;
+    /*Retirar sublinado do link*/
+    text-decoration: none;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    /*Centraliza o texto dentro do link*/
+    margin: 5px 5px;
+
+}
+
+/*Evento hover, aplicado aos nossos itens do menu, funciona da seguinte forma, aopassar o mouse em cima do elemento, a modificações que definirmos dentro das chaves*/
+li a:hover {
+    /*Ao passar o mouse em cima do link(do menu) a cor de fundo fica mais clara*/
+    background-color: rgb(114, 93, 93);
+    color: rgb(238, 153, 153);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card {
+    /*Definindo a cor de fundo do card*/
+    background-color: #cfafaf;
+    /*Distância entre a borda do card e demais elementos externos*/
+    margin: 10px;
+    /*Distância entre conteúdo do card e a borda do card*/
+    padding: 10px;
+    /*Arredondamento das bordas do card*/
+    border-radius: 10px;
+    /*Sombra do card*/
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    /*Exibe os itens do menu em linha, permitindo que fiquem lado a lado*/
+    width: 400px;
+    /*Largura do card*/
+    height: 400px;
+    /*Altura do card*/
+
+
+
+
+}
+
+.card:hover {
+    /*Ao passar o mouse em cima do card, a cor de fundo fica mais clara*/
+    background-color: #ebebeb;
+    color: rgb(238, 153, 153);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#visite {
+    /* Definindo a cor de fundo da section visite */
+    background-color: #dbd7b4;
+
+}
+
+
+/*Estilizando o menu responsivo para tamanhos de telas pequenas*/
+/*Faz o nosso menu e todos os seus itens ficarem invisíveis*/
+.menuicone,
+.mobile-menu,
+#menu-check {
+    display: none;
+}
+
+/*O comando abaixo não está sendo usado*/
+.desktop-menu {
+    display: block;
+}
+
+/*@media é uma regra do css para responsividade, aplicando os estilos a determinadas situações, como por exemplo quando as telas são pequenas demais ou grandes demais*/
+@media(max-width:768px) {
+
+    /*Escondendo a barra de navegação antiga*/
+    #barraNavegação {
+        display: none;
+
+    }
+
+    /*Oculta a caixinha do checkbox*/
+    #menu-check {
+        display: none;
+    }
+
+    .menuicone {
+        display: block;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+    }
+    .mobile-menu a{
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+       
+
+    }
+    /*Ativando o menu como checkbox "marcado"*/
+    #menu-check:checked + .menuicone + .mobile-menu {
+        display: flex;
+        /*Exibe os itens do menu em linha, permitindo que fiquem lado a lado*/
+    }
+    .mobile-menu a:hover {
+        background-color: #686868;
+        
+    }
+    /*Fixando o menu no topo da tela*/
+    .menuicone {
+        position: sticky;
+        top: 0px;
+        
+    }
+    .mobile-menu{
+        position: sticky;
+        top: 42px;
+        /*Distância entre o topo da tela e o menu*/
+    }
+
+
+
+}
+.imagem-copacabana {
+    /* Estilização específica para as imagens da seção de Copacabana */
+    display: inline-block;
+    width: 30%;
+    height: 30%;
+}
