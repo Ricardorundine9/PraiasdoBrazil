@@ -1,0 +1,65 @@
+#menu {
+    display: none;
+    /*Esconde o ícone Checkbox da tela*/
+}
+
+/*Estilizando a Label*/
+.menuicone {
+    display: block;
+    /*Exibe cada item, como um bloco, ocupando sua propria linha*/
+    background-color: black;
+    color: white;
+    ;
+    /*Cor letra*/
+    padding: 10px;
+    cursor: pointer;
+    width: fit-content;
+    /*Ajusta a largura ao tamanho do conteúdo*/
+}
+
+/*Estilo do menu oculto(Lista de links)*/
+.menu-mobile {
+    /*é uma propriedade CSS que remove completamente um elemento da página, tanto visualmente quanto em termos de layout*/
+    display: none;
+    /*Dentro da media query, alteramos a direção principal para coluna, fazendo com que as imagens sejam exibidas uma abaixo da outra. */
+    flex-direction: column;
+    background-color: black
+}
+
+li {
+    height: 20px;
+
+}
+
+/*Estilização dos links dentro do menu oculto*/
+.menu-mobile a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+
+
+}
+
+/*Regra exibe o menu quando o checkbox é marcado(selecionado)*/
+#menu:checked+.menuicone+.menu-mobile {
+    /*Ativa o modelo de layout flexível para o contêiner das imagens.*/
+    display: flex;
+
+
+}
+
+.menuicone:hover {
+    background-color: #e29797;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+
+}
+
+.menu-mobile:hover {
+    background-color: #e29797;
+    color: rgb(211, 168, 168);
+    border-radius: 8px;
+    transition: 0.3s;
+
+}

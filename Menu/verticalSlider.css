@@ -1,0 +1,64 @@
+/*Esconde o ícone Checkbox da tela*/
+#menu{
+    display: none;
+}
+
+.menuicone {
+    display: block;
+    /*Exibe cada item, como um bloco, ocupando sua propria linha*/
+    background-color: black;
+    color: white;
+    ;
+    /*Cor letra*/
+    padding: 10px;
+    cursor: pointer;
+    width: fit-content;
+    /*Ajusta a largura ao tamanho do conteúdo*/
+}
+/*Definindo a lateral fixa para o menu*/
+.menu-vertical{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    background-color: #c97272;
+    padding: 40px; /*Espaço entre o topo da tela*/
+    /*é uma propriedade CSS que remove completamente um elemento da página, tanto visualmente quanto em termos de layout*/
+    display: none;
+    /*Dentro da media query, alteramos a direção principal para coluna, fazendo com que as imagens sejam exibidas uma abaixo da outra. */
+    flex-direction: column;
+    background-color: black
+}
+   
+
+/*Removendo os marcadores e atribuindo espaçamento padrão da lista*/
+.menu-vertical li{
+    list-style: none;
+    padding: 0;
+}
+
+/*Estilizando os links do menu*/
+.menu-vertical a{
+   
+    text-decoration: none;
+}
+
+a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(224, 229, 233);
+}
+
+/*Regra exibe o menu quando o checkbox é marcado(selecionado)*/
+#menu:checked+.menuicone+.menu-vertical {
+    /*Ativa o modelo de layout flexível para o contêiner das imagens.*/
+    display: flex;
+    flex-direction: column;
+}
+.menu-vertical:hover{
+    background-color: #82d1e7;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+
+}

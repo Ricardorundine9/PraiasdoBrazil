@@ -1,0 +1,45 @@
+.menu-hover, ul{
+    /*Criar layouts flexíveis, permitindo o alinhamento mais eficiente, horizontal e vertical*/
+    display:flex;
+    /*Distância entre os elementos*/
+    gap:30px;
+    
+    background-color: aliceblue;
+    padding: 10px 20px;
+    justify-content: center;
+}
+
+li{
+/*Tirar os pontos*/
+ list-style: none;
+}
+.menu-hover a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding: 5px;
+    /*Transição suave na mudança de cor*/
+    transition: color 0.5s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    
+
+}
+
+.menu-hover a::after{
+    content:"" ; /*Cria um elemento-conteúdo vazio*/
+    position:absolute;/*Posição da linha em relação ao texto*/
+    bottom: 0;
+    left: 0; /*A linha irá aparecer do lado esquerdo*/
+    width: 0; /*Linha começa "invisivel com 0% de largura*/
+    background-color: aqua;
+    transition: width 0.5s ease;
+    height: 2px;/*Adicionamos uma altura*/
+    
+
+}
+
+.menu-hover a:hover::after{
+    width: 100%;
+}
