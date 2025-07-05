@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌊Praias do Brasil 🌊</title>
+
+    <!-- Link paraconexão do arquivo externo do Css externo-->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <ul id="barraNavegação">
+        <li class="menu"><a href="#copacabana"><button>Copacabana</button></a></li>
+        <li class="menu"><a href="#praiadoforte"><button>Praia do Forte</button></a></li>
+        <li class="menu"><a href="#portodegalinhas"><button>Porto de Galinhas</button></a></li>
+        <li class="menu"><a href="#praiadepipa"><button>Praia de Pipa</button></a></li>
+        <li class="menu"><a href="#maragogi"><button>Maragogi</button></a></li>
+        <li class="menu"><a href="#cuidadosnoverão"><button>Cuidados no Verão</button></a></li>
+        <li class="menu"><a href="#dicas"><button>Dicas</button></a></li>
+        <li class="menu"><a href="#visite"><button>Visite também</button></a></li>
+    </ul>
+    <!--Criando a estrutura do menu check - menu que aparecerá quando a ela estiver pequena-->
+    <!--Cria um checbox que ficará invisivel e servirá de gatilho para o menu-->
+    <input type="checkbox" id="menu-check">
+    <!--Cria um rótulo clicável que aciona o check box acima, ele sabe que precisa acionar ocheck box acima devido ao parâmtro menu-check passado no atributo for, que corresponde ao mesmo id do input type checkbox-->
+    <label for="menu-check" class="menuicone">&#9776;Menu</label>
+    <!--Criando o menu que aparecerá quando a tela estiver pequena-->
+    <nav class="mobile-menu">
+        <a href="#copacabana"><button>Copacabana</button></a>
+        <a href="#praiadoforte"><button>Praia do Forte</button></a>
+        <a href="#portodegalinhas"><button>Porto de Galinhas</button></a>
+        <a href="#praiadepipa"><button>Praia de Pipa</button></a>
+        <a href="#maragogi"><button>Maragogi</button></a>
+        <a href="#cuidadosnoverão"><button>Cuidados no Verão</button></a>
+        <a href="#dicas"><button>Dicas</button></a>
+        <a href="#visite"><button>Visite também</button></a>
+    </nav>
+
+    <h1 style="justify-content: center; display: flex;" margin><em>🌊Praias do Brasil🌊<em></h1> <!--css inline-->
+    <!--Estrutura de organização das informações dentro de uma pág. web-->
+    <section id="copacabana">
+        <!--Título da seção, h1 é o título principal, h2 subtítulo e h3 sub-subtítulo-->
+        <h3>Copacabana - RJ</h3>
+        <!--Adiciona uma imagem, possui o atributo src onde se referencia a imagem (onde está) e o alt auxilia na acessibilidade além de exibir o txt na tela quando a imagem falhar-->
+        <div class="ladoalado">
+            <img src="img/praia-de-copacabana.jpg" alt="Praia de Copacabana">
+
+            <img src="img/a-historia-do-calcadao-de-copacabana-da-origem-portuguesa-ao-burle-marx_6.jpg"
+                alt="Praia de Copacabana">
+        </div>
+
+
+        <h2>Restaurantes recomendados</h2>
+        <!--Criando uma lista não-ordenada-->
+        <ul><!--Estrutura de lista não-ordenada-->
+            <!--1º item da lista-->
+            <li><strong>Nossa primeira recomendação é o restaurante:</strong>
+                <a href="https://marius.com.br/">Marius, conhecido por sua cozinha Brasileira e Mediterrânea.</a>
+            </li>
+            <!--2º item da lista-->
+            <li><strong>Nossa segunda recomendação vai para Cantina:</strong> <a href="http://latrattoriario.com.br/">La
+                    Trattoria</a>, conhecido por sua tradicional comida italiana.</li>
+            <!--3° item da lista-->
+            <li><strong>Por fim nosso última recomendação é o restaurante:</strong> <a
+                    href="https://windsorhoteis.com/hotel/miramar-by-windsor-copacabana/gastronomia/">Alloro Al
+                    Miramar</a>, outro tradicional restaurante de comida italiana muito elogiado pelos clientes.</li>
+        </ul><!--fim da lista não ordenada-->
+        <h2>O que fazer em Copacabana</h2>
+        <ol><!--Inicio da lista ordenada-->
+            <li>O clássico: você pode tomar sol, pegar um bronze, nadar ou simplismente relaxar na areia com uma água de
+                coco.</li>
+            <li>Forte de copacabana:Uma mistura de história, vista linda e café da manhã gostoso (o café do Forte é
+                famoso). Dá pra ver toda a orla da praia de lá. </li>
+            <li>Feirinha de copacabana: Acontece principalmente à noite, tem artesanato, lembrancinhas e várias
+                coisinhas cariocas.</li>
+        </ol>
+    </section>
+    <!--Estrutura das demais sections-->
+    <section id="praiadoforte">
+        <h3>Praia do Forte - BA</h3>
+        <div class="ladoalado">
+            <img src="img/projeto-tamar-praia-do-forte-bahia-768x513.jpg" alt="Praia do Forte">
+            <img src="img/praia do forte2.webp" alt="Praia do Forte">
+        </div>
+
+        <h2>Restaurantes recomendados</h2>
+        <ul>
+            <li><strong>Nossa primeira recomendação é o restaurante:</strong>
+                <a href="https://belanordestina.com.br/">Bela Nordestina</a>.Comida típica Nordestina, desde frutos do
+                mar a carnes do sertão. Bela trás a tradição com gostos e sabores e um atendimento acolhedor.
+            </li>
+            <li><strong>Nossa segunda recomendação é o restaurante:</strong>
+                <a href="https://linktr.ee/xicasbistro">Xica's Bistrô</a>.Comida caseira com toque Gourmet.
+            </li>
+            <li><strong>Nossa terceira recomendação é o restaurante:</strong>
+                <a href="https://terrabrasilrestaurante.com.br/">Terra Brasil</a>.Pratos saborosos, e com especialidade
+                em frutos do mar, filés e culinária baiana.
+            </li>
+        </ul>
+        <h2>O que fazer em Praia do Forte</h2>
+        <ol>
+            <li>Projeto Tamar:
+                Um centro de conservação de tartarugas marinhas, onde é possível aprender sobre a preservação da espécie
+                e ver de perto o trabalho de cuidado com os animais.</li>
+            <li>Visitar o Castelo Garcia D'Ávila: Uma construção histórica que remonta ao século XVI, oferecendo uma
+                vista deslumbrante da região.</li>
+            <li>Praia do Forte: Aproveitar as belezas naturais da praia, com suas águas cristalinas e areia branca.</li>
+        </ol>
+    </section>
+
+    <section id="praiadepipa">
+        <h3>Praia de Pipa - RN</h3>
+        <div class="ladoalado">
+            <img src="img/pipa.jpg" alt="Praia de Pipa">
+            <img src="img/praia-da-Pipa-1024x576.jpeg" alt="Praia de Pipa">
+        </div>
+
+        <h2>Restaurantes recomendados</h2>
+        <ul>
+            <li><strong>Nossa primeira recomendação é o restaurante:</strong>
+                <a href="https://boalembranca.com.br/restaurantes/trio-resto/">Trio Restô</a>.Tudo com muito capricho.
+                Para o Trio, todos os nossos clientes são muito especiais.
+            </li>
+            <li><strong>Nossa segunda recomendação é o restaurante:</strong>
+                <a href="https://tocadacoruja.com.br/gastronomia">Toca da Coruja</a>.Criamos um ambiente onde música,
+                iluminação, aroma e sabor se fundem em completa harmonia com a natureza.
+            </li>
+            <li><strong>Nossa terceira recomendação é o restaurante:</strong>
+                <a href="https://exoticaboutiquehotel.com.br/restaurante-exotica-pipa/">Exotica</a>.No restaurante do
+                Exotica Boutique Hotel, oferecemos uma experiência gastronômica excepcional que combina culinária
+                contemporânea com luxo incomparável.
+            </li>
+        </ul>
+        <h2>O que fazer em Praia de Pipa</h2>
+        <ol>
+            <li>Visitar o Parque Estadual Mata da Pipa: Uma reserva natural com trilhas, mirantes e uma rica
+                biodiversidade.</li>
+            <li>Praia do Amor: Conhecida por suas ondas e beleza natural, é um ótimo lugar para surfar ou relaxar.</li>
+            <li>Fazer um passeio de barco: Explore as falésias e as piscinas naturais da região.</li>
+        </ol>
+    </section>
+
+    <section id="portodegalinhas">
+        <h3>Praia Porto de Galinhas - PE</h3>
+        <div class="ladoalado">
+            <img class="foto" src="img/porto-de-galinhas-onde-fica-quando-ir-quantos-dias-ficar.png"
+                alt="Praia de Porto de Galinhas">
+            <img class="foto" src="img/piscinas-naturais-porto-galinhas3.jpg" alt="Praia de Porto de Galinhas">
+        </div>
+        <h2>Restaurantes recomendados</h2>
+        <ul>
+            <li><strong>Nossa primeira recomendação de restaurante:</strong>
+                <a
+                    href="https://www.instagram.com/accounts/login/?next=%2Fbarracacozinhabrasileira%2F&source=omni_redirect">O
+                    Barraca</a>.O Barraca desembarca em Porto de Galinhas para ser um Restaurante e Bar casual, onde
+                você possa ficar bem à vontade para experimentar pequenas delícias ou saborear nossos pratos .
+            </li>
+            <li><strong>Nossa segunda recomendação de restaurante:</strong>
+                <a href="https://www.instagram.com/minhapraiacozinhadomar/">inha Praia</a>.Restaurante casual, onde você
+                pode ficar bem a vontade para experimentar delícias de tudo o que o nosso mar pode oferecer
+            </li>
+            <li><strong>Nossa terceira recomendação de restaurante:</strong>
+                <a
+                    href="https://www.instagram.com/manguetownmarefogo/?utm_source=ig_web_button_share_sheet&igsh=zdnlzdc0mzixnw%3D%3D#">Manguetown
+                    Mar e Fogo</a>.O Manguetown é especializado em frutos do mar na brasa oferecendo uma variedade
+                deliciosa de opções grelhadas,
+            </li>
+        </ul>
+        <h2>O que fazer em Praia Porto de Galinhas</h2>
+        <ol>
+            <li>Visitar as piscinas naturais: Aproveite as águas cristalinas e a rica vida marinha.</li>
+            <li>Fazer um passeio de jangada: Explore as belezas da costa e as formações de corais.</li>
+            <li>Conhecer o projeto Hippocampus: Um centro de preservação dos cavalos-marinhos.</li>
+        </ol>
+    </section>
+
+    <section id="maragogi">
+        <h3>Maragogi - AL</h3>
+        <div class="ladoalado">
+            <img src="img/JEOEepTT-maragogi-em-alagoas-1024x684.webp" alt="Praia de Maragogi">
+            <img src="img/criancas-em-maragogi-dicas.jpg" alt="Praia de Maragogi">
+
+        </div>
+        <h2>Restaurantes recomendados</h2>
+        <ul>
+            <li><strong>Nossa primeira recomendação de restaurante:</strong>
+                <a href="https://www.hotelareiasbelas.com.br/restaurante">NETUN RESTAURANTE</a>.Nós acreditamos na
+                pureza dos ingredientes para a preparação das melhores receitas.
+            </li>
+            <li><strong>Nossa segunda recomendação de restaurante:</strong>
+                <a href="https://www.facebook.com/merakibeach">Meraki Beach</a>.Um restaurante à beira-mar que oferece
+                uma experiência gastronômica única com pratos frescos e saborosos.
+            </li>
+            <li><strong>Nossa terceira recomendação de restaurante:</strong>
+                <a href="https://www.instagram.com/bintangrooftop/#">Bintang Rooftop</a>.Um restaurante com uma vista
+                deslumbrante e uma seleção de pratos deliciosos.
+            </li>
+        </ul>
+        <h2>O que fazer em Maragogi</h2>
+        <ol>
+            <li>Caminho de Moisés:
+                Uma faixa de areia que se forma na maré baixa, permitindo caminhar mar adentro em meio às águas
+                cristalinas. É um local bastante procurado para fotos. .</li>
+            <li>Fazer um passeio de catamarã: Explore as belezas da costa e as formações de corais.</li>
+            <li>Passeios de Buggy e Quadriciclo:
+                Uma forma divertida de explorar as praias e paisagens da região, com opções de passeios guiados por
+                trilhas e pela orla.</li>
+        </ol>
+    </section>
+
+
+    <section id="cuidadosnoverão">
+        <div class="ladoalado">
+            <img src="img/foto-vertical-de-palmeiras-na-praia.jpg" alt="">
+
+        </div>
+        <h2>Cuidados no Verão</h2>
+        <p>Para aproveitar o verão com segurança, é importante tomar alguns cuidados, como usar protetor solar,
+            manter-se hidratado...</p>
+
+
+        <ul>
+            <li><strong>Fique longe do limão</strong></li>
+            <li><strong>Abuse do protetor solar(e de roupas com fotoproteção)</strong></li>
+            <li><strong>Tenha cuidado com a alimentação.</strong></li>
+            <li><strong>Evite nadar logo após comer</strong></li>
+            <li><strong>Não fique muito tempo com a roupa de banho molhada</strong></li>
+            <li><strong>Não esqueça de proteger os olhos</strong></li>
+            <li><strong>Cuidado com a bebida alcoólica em excesso</strong></li>
+            <li><strong>Não esqueça de beber água</strong></li>
+        </ul>
+    </section>
+
+    <section id="dicas">
+        <h1>Dicas para não perder crianças na praia</h1>
+
+        <p>Em praias movimentadas, é essencial ficar atento às crianças. Algumas dicas incluem estabelecer um ponto de
+            encontro, identificar as crianças com pulseiras...</p>
+        <div class="ladoalado">
+            <img src="img/menino-brincando-com-suas-irmas-na-areia.jpg" alt="">
+
+        </div>
+        <h2>Outras dicas</h2>
+
+        <ol>
+
+            <li style="color:aliceblue"><strong>Mantenha um ponto de encontro definido.</strong></li>
+            <li style="color:aliceblue"><strong>Use pulseiras de identificação nas crianças.</strong></li>
+            <li style="color:aliceblue"><strong>Ensine as crianças seus nomes completos e números de telefone.</strong>
+            </li>
+            <li style="color:aliceblue"><strong>Esteja atento à localização das salva-vidas.</strong></li>
+            <li style="color:aliceblue"><strong>Evite praias muito movimentadas.</strong></li>
+            <li style="color:aliceblue"><strong>Incentive as crianças a não se afastarem muito</strong></li>
+            <li style="color:aliceblue"><strong>Use uma barraca ou guarda-sol colorido como ponto de referência</strong>
+            </li>
+            <li style="color:aliceblue"><strong>Esteja ciente dos arredores e identifique pontos de referência
+                    fixos.</strong></li>
+        </ol>
+    </section>
+
+    <section id="visite">
+        <h2>Visite também</h2>
+        <!-- A div também é uma estrutura organizadora de elementos-->
+        <div>
+            <!--Construindo cards-->
+            <!--Card n°1-->
+
+            <div class="card" style="width : 18rem;">
+                <img src="img/pelourinho.jpg" alt="" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Pelourinho</h5>
+                    <p class="card-text">O Pelourinho é um dos principais pontos turísticos de Salvador, conhecido por
+                        sua arquitetura colonial e rica história.</p>
+                    <a href="https://www.instagram.com/accounts/login/?next=%2Fpelourinho_oficial%2F&source=omni_redirect"
+                        class="btn"><button>Visitar</button></a>
+                </div>
+            </div>
+
+
+            <!--Card n°2-->
+            <div class="card" style="width : 18rem;">
+                <img src="img/CristoRedentor2-oyzigktfdsprdoxdbhdrwm5vfd2wk05daondeyc820.png.webp" alt=""
+                    style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Cristo Redentor</h5>
+                    <p class="card-text">O Cristo Redentor é uma das sete maravilhas do mundo moderno, localizado no Rio
+                        de Janeiro, Brasil.</p>
+                    <a href="https://www.tremdocorcovado.rio/" class="btn"><button>Visitar</button></a>
+                </div>
+
+                <!--Card n°3-->
+            </div>
+
+
+
+            <div class="card" style="width : 18rem;">
+                <img src="img/diamantina_capablog.webp" alt="" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Chapada Diamantina</h5>
+                    <p class="card-text">A Chapada Diamantina é um parque nacional localizado na Bahia, Brasil,
+                        conhecido por suas paisagens deslumbrantes e trilhas para caminhadas.</p>
+                    <a href="https://www.instagram.com/accounts/login/?next=%2Fchapadadiamantina%2F&source=omni_redirect"
+                        class="btn"><button>Visitar</button></a>
+                </div>
+            </div>
+    </section>
+
+    <!--Criando o rodapé da página-->
+    <footer>
+    <p>Produzido por <strong>Ricardo Rundine<strong></p>
+    <p>Curso de Desenvolvimento em JavaScript 2025</p>
+    </footer>
+
+
+    <script>
+        // Função para exibir um alerta ao clicar no botão "Visitar"
+        function showAlert() {
+            alert("Obrigado por visitar nosso site!");
+        }
+
+        // Adiciona o evento de clique ao botão "Visitar"
+        const visitButtons = document.querySelectorAll('.btn');
+        visitButtons.forEach(button => {
+            button.addEventListener('click', showAlert);
+        });
+        const userName = window.prompt("Qual é o seu nome?");
+        window.alert("Seja bem-vindo(a) ao nosso site, " + userName + "!");
+    </script>
+</body>
+
+</html>
